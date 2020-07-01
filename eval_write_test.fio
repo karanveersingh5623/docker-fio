@@ -1,0 +1,16 @@
+[global]
+ioengine=libaio
+iodepth=32
+direct=1
+invalidate=1
+runtime=60
+#size=30g
+time_based
+#directory=/test
+#filename=/dev/nvme0n2
+
+[rand-write-4k]
+bs=128k
+rw=randwrite
+#percentage_random=100
+stonewall
